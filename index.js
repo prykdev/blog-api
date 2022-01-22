@@ -8,7 +8,7 @@ const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 
 const app = express();
-const port = 5000;
+const port = 5000 || process.env.PORT;
 
 app.use(express.json());
 
